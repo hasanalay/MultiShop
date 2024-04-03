@@ -15,9 +15,11 @@
   <ItemGroup>
     <None Remove="Controllers\" />
     <None Remove="Entities\" />
+    <None Remove="Settings\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Entities\" />
+    <Folder Include="Settings\" />
   </ItemGroup>
 </Project>
