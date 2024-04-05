@@ -10,14 +10,40 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="MongoDB.Bson" Version="2.23.1" />
     <PackageReference Include="MongoDB.Driver" Version="2.23.1" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Controllers\" />
     <None Remove="Entities\" />
+    <None Remove="Settings\" />
+    <None Remove="Dtos\" />
+    <None Remove="Dtos\CategoryDtos\" />
+    <None Remove="Dtos\ProductDetailDtos\" />
+    <None Remove="Dtos\ProductImageDtos\" />
+    <None Remove="Dtos\ProductDtos\" />
+    <None Remove="Mapping\" />
+    <None Remove="Services\" />
+    <None Remove="Services\CategoryServices\" />
+    <None Remove="Services\ProductServices\" />
+    <None Remove="Services\ProductDetailServices\" />
+    <None Remove="Services\ProductImageServices\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Entities\" />
+    <Folder Include="Settings\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Dtos\CategoryDtos\" />
+    <Folder Include="Dtos\ProductDetailDtos\" />
+    <Folder Include="Dtos\ProductImageDtos\" />
+    <Folder Include="Dtos\ProductDtos\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\CategoryServices\" />
+    <Folder Include="Services\ProductServices\" />
+    <Folder Include="Services\ProductDetailServices\" />
+    <Folder Include="Services\ProductImageServices\" />
   </ItemGroup>
 </Project>
