@@ -24,6 +24,11 @@
     <None Remove="Dtos\ProductImageDtos\" />
     <None Remove="Dtos\ProductDtos\" />
     <None Remove="Mapping\" />
+    <None Remove="Services\" />
+    <None Remove="Services\CategoryServices\" />
+    <None Remove="Services\ProductServices\" />
+    <None Remove="Services\ProductDetailServices\" />
+    <None Remove="Services\ProductImageServices\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -35,5 +40,10 @@
     <Folder Include="Dtos\ProductImageDtos\" />
     <Folder Include="Dtos\ProductDtos\" />
     <Folder Include="Mapping\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\CategoryServices\" />
+    <Folder Include="Services\ProductServices\" />
+    <Folder Include="Services\ProductDetailServices\" />
+    <Folder Include="Services\ProductImageServices\" />
   </ItemGroup>
 </Project>
