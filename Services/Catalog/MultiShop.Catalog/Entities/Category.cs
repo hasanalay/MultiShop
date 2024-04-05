@@ -1,11 +1,12 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace MultiShop.Catalog.Entities
 {
-	public class Catalog
+	public class Category
 	{
 		[BsonId]
-		[BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+		[BsonRepresentation(BsonType.ObjectId)]
 		public string CategoryId { get; set; }
 		public string CategoryName { get; set; }
 	}

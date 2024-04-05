@@ -10,16 +10,30 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="MongoDB.Bson" Version="2.23.1" />
     <PackageReference Include="MongoDB.Driver" Version="2.23.1" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Controllers\" />
     <None Remove="Entities\" />
     <None Remove="Settings\" />
+    <None Remove="Dtos\" />
+    <None Remove="Dtos\CategoryDtos\" />
+    <None Remove="Dtos\ProductDetailDtos\" />
+    <None Remove="Dtos\ProductImageDtos\" />
+    <None Remove="Dtos\ProductDtos\" />
+    <None Remove="Mapping\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Entities\" />
     <Folder Include="Settings\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Dtos\CategoryDtos\" />
+    <Folder Include="Dtos\ProductDetailDtos\" />
+    <Folder Include="Dtos\ProductImageDtos\" />
+    <Folder Include="Dtos\ProductDtos\" />
+    <Folder Include="Mapping\" />
   </ItemGroup>
 </Project>
