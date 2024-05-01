@@ -6,4 +6,35 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Features\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Features\CQRS\" />
+    <None Remove="Features\Mediator\" />
+    <None Remove="Features\CQRS\Commands\" />
+    <None Remove="Features\CQRS\Queries\" />
+    <None Remove="Features\CQRS\Handlers\" />
+    <None Remove="Features\CQRS\Results\" />
+    <None Remove="Features\CQRS\Commands\AddressCommands\" />
+    <None Remove="Features\CQRS\Handlers\AddressHandlers\" />
+    <None Remove="Features\CQRS\Queries\AddressQueries\" />
+    <None Remove="Features\CQRS\Results\AddressResults\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Features\CQRS\" />
+    <Folder Include="Features\Mediator\" />
+    <Folder Include="Features\CQRS\Commands\" />
+    <Folder Include="Features\CQRS\Queries\" />
+    <Folder Include="Features\CQRS\Handlers\" />
+    <Folder Include="Features\CQRS\Results\" />
+    <Folder Include="Features\CQRS\Commands\AddressCommands\" />
+    <Folder Include="Features\CQRS\Handlers\AddressHandlers\" />
+    <Folder Include="Features\CQRS\Queries\AddressQueries\" />
+    <Folder Include="Features\CQRS\Results\AddressResults\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MultiShop.Order.Domain\MultiShop.Order.Domain.csproj" />
+  </ItemGroup>
 </Project>
