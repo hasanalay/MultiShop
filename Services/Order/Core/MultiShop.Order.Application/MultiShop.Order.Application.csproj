@@ -19,6 +19,19 @@
     <None Remove="Features\CQRS\Handlers\AddressHandlers\" />
     <None Remove="Features\CQRS\Queries\AddressQueries\" />
     <None Remove="Features\CQRS\Results\AddressResults\" />
+    <None Remove="Features\CQRS\Results\OrderDetailResults\" />
+    <None Remove="Features\CQRS\Queries\OrderDetailQueries\" />
+    <None Remove="Features\CQRS\Commands\OrderDetailCommands\" />
+    <None Remove="Features\CQRS\Handlers\OrderDetailHandlers\" />
+    <None Remove="Features\Mediator\Results\" />
+    <None Remove="Features\Mediator\Handlers\" />
+    <None Remove="Features\Mediator\Commands\" />
+    <None Remove="Features\Mediator\Queries\" />
+    <None Remove="Features\Mediator\Results\OrderingResults\" />
+    <None Remove="Features\Mediator\Queries\OrderingQueries\" />
+    <None Remove="Features\Mediator\Commands\OrderingCommands\" />
+    <None Remove="Features\Mediator\Handlers\OrderingHandlers\" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -33,8 +46,26 @@
     <Folder Include="Features\CQRS\Handlers\AddressHandlers\" />
     <Folder Include="Features\CQRS\Queries\AddressQueries\" />
     <Folder Include="Features\CQRS\Results\AddressResults\" />
+    <Folder Include="Features\CQRS\Results\OrderDetailResults\" />
+    <Folder Include="Features\CQRS\Queries\OrderDetailQueries\" />
+    <Folder Include="Features\CQRS\Commands\OrderDetailCommands\" />
+    <Folder Include="Features\CQRS\Handlers\OrderDetailHandlers\" />
+    <Folder Include="Features\Mediator\Results\" />
+    <Folder Include="Features\Mediator\Handlers\" />
+    <Folder Include="Features\Mediator\Commands\" />
+    <Folder Include="Features\Mediator\Queries\" />
+    <Folder Include="Features\Mediator\Results\OrderingResults\" />
+    <Folder Include="Features\Mediator\Queries\OrderingQueries\" />
+    <Folder Include="Features\Mediator\Commands\OrderingCommands\" />
+    <Folder Include="Features\Mediator\Handlers\OrderingHandlers\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MultiShop.Order.Domain\MultiShop.Order.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
   </ItemGroup>
 </Project>
