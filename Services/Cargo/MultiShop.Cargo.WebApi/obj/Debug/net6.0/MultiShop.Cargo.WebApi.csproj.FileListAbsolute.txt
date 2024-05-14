@@ -250,3 +250,5 @@
 /Users/hasanalay/Projects/MultiShop/Services/Cargo/MultiShop.Cargo.WebApi/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
 /Users/hasanalay/Projects/MultiShop/Services/Cargo/MultiShop.Cargo.WebApi/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
 /Users/hasanalay/Projects/MultiShop/Services/Cargo/MultiShop.Cargo.WebApi/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/hasanalay/Projects/MultiShop/Services/Cargo/MultiShop.Cargo.WebApi/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/hasanalay/Projects/MultiShop/Services/Cargo/MultiShop.Cargo.WebApi/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll

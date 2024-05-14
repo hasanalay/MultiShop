@@ -24,6 +24,10 @@ namespace MultiShop.IdentityServer
             {
                 Scopes = {"OrderFullPermission"}
             },
+            new ApiResource("ResourceCargo")
+            {
+                Scopes = {"CargoFullPermission", "CargoReadPermission"}
+            },
             new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
 
@@ -40,6 +44,8 @@ namespace MultiShop.IdentityServer
             new ApiScope("CatalogReadPermission", "Reading authority for catalog oprerations"),
             new ApiScope("DiscountFullPermission", "Full authority for discount oprerations"),
             new ApiScope("OrderFullPermission", "Full authority for order oprerations"),
+            new ApiScope("CargoFullPermission", "Full authority for cargo oprerations"),
+            new ApiScope("CargoReadPermission", "Reading authority for cargo oprerations"),
             new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
         };
 
@@ -52,7 +58,11 @@ namespace MultiShop.IdentityServer
                 ClientName = "MultiShop Visitor User",
                 AllowedGrantTypes = GrantTypes.ClientCredentials,
                 ClientSecrets = {new Secret("multishopsecret".Sha256())},
-                AllowedScopes =  { "DiscountFullPermission" }                
+                AllowedScopes =
+                {
+                    "DiscountFullPermission",
+                    "CatalogReadPermission"
+                }                
             },
 
             //Manager
@@ -62,7 +72,13 @@ namespace MultiShop.IdentityServer
                 ClientName = "MultiShop Manager User",
                 AllowedGrantTypes = GrantTypes.ClientCredentials,
                 ClientSecrets = {new Secret("multishopsecret".Sha256())},
-                AllowedScopes =  { "CatalogFullPermission", "CatalogReadPremission" }
+                AllowedScopes =
+                {
+                    "CatalogFullPermission",
+                    "CatalogReadPremission",
+                    "DiscountFullPermission",
+                    "CargoReadPermission"
+                }
             },
 
             //Admin
@@ -78,6 +94,8 @@ namespace MultiShop.IdentityServer
                     "CatalogReadPremission",
                     "DiscountFullPermission",
                     "OrderFullPermission",
+                    "CargoReadPermission",
+                    "CargoFullPermission",
                     IdentityServerConstants.LocalApi.ScopeName,
                     IdentityServerConstants.StandardScopes.Email,
                     IdentityServerConstants.StandardScopes.OpenId,
