@@ -415,3 +415,5 @@ workspace.xml
 
 src/IdentityServer4/host/identityserver.db
 tempkey.jwk
+/Services/Cargo/MultiShop.Cargo.WebApi/bin
+/Services/Cargo/MultiShop.Cargo.WebApi/obj
