@@ -18,7 +18,7 @@ namespace MultiShop.Discount.Context
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;User Id=SA;Password=Passwd1234;Initial Catalog=MultiShopDiscountDb;Integrated Security=true;Trusted_Connection=False");
+            optionsBuilder.UseSqlServer("Server=localhost,1460;User Id=SA;Password=123456Aa*;Initial Catalog=MultiShopDiscountDb;Integrated Security=true;Trusted_Connection=False");
         }
 
         public DbSet<Coupon> Coupons { get; set; }
