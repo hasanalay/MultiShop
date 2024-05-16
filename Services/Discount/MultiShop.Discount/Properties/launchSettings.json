@@ -11,9 +11,8 @@
   "profiles": {
     "MultiShop.Discount": {
       "commandName": "Project",
-      "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7194;http://localhost:5233",
+      "applicationUrl": "https://localhost:7071",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
