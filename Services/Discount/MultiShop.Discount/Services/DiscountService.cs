@@ -8,9 +8,9 @@ namespace MultiShop.Discount.Services
 	{
         private readonly DapperContext _context;
 
-        public DiscountService(DapperContext context)
+        public DiscountService(IConfiguration configuration)
         {
-            _context = context;
+            _context = new DapperContext(configuration, true);
         }
 
         public async Task CreateDiscountCouponAsync(CreateDiscountCouponDto createCouponDto)
